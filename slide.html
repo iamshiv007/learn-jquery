@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+      div {
+        text-align: center;
+        padding: 5px;
+        margin-top: 10px;
+        text-align: center;
+        background-color: gray;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button class="slideUp">slideUp</button>
+    <button class="slideDown">slideDown</button>
+    <button class="slideToggle">slideToggle</button>
+
+    <div>
+      <p>Hello This is Shivraj Gurjar</p>
+      <p>I am learning jquery with easy examples</p>
+    </div>
+  </body>
+
+  <script>
+    $(".slideUp").click(function () {
+      $("div").slideUp();
+    });
+    $(".slideDown").click(function () {
+      $("div").slideDown();
+    });
+    $(".slideToggle").click(function () {
+      $("div").slideToggle();
+    });
+  </script>
+</html>
