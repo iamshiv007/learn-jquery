@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hide and Show</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <style>
+      div {
+        text-align: center;
+        background-color: gray;
+        color: white;
+        padding: 5px;
+        margin-top: 10px;
+      }
+    </style>
   </head>
   <body>
     <button id="hide">Hide</button>
@@ -24,7 +34,7 @@
     $("#hide").click(function () {
       $("div").hide();
     });
-    
+
     $("#show").click(function () {
       $("div").show();
     });
